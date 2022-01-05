@@ -22,28 +22,18 @@ public class googleFeatures extends propertiesObj {
 		try { 
 	     
 		 pro=getPropertyObj();
-		 
 		 driver =	initialiseDriver.initiatiase();
-		 
 		 driver.get(pro.getProperty("google_url"));
-		 
 		 log.error("Successfully opened the website");
-		 
 		 driver.manage().window().maximize();
-		 
 		 readExcel.getElement(driver,"google_search").sendKeys("admin",Keys.ENTER);
-		 
 		 log.debug("Successfully clicked on search button");
-		 
 		 driver.close();
-		 
 		 log.info("Successfully closed the driver object");
 		 
 		}catch(Exception e) {
 			e.printStackTrace();
-			
 			driver.close();
-			
 			log.error("Could not open the site ...please check");
 		}
 	}
