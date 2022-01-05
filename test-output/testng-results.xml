@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-05T20:03:33 IST" name="Default suite" finished-at="2022-01-05T20:03:49 IST" duration-ms="16310">
+    <groups>
+    </groups>
+    <test started-at="2022-01-05T20:03:33 IST" name="Default test" finished-at="2022-01-05T20:03:49 IST" duration-ms="16310">
+      <class name="testNGTest.loksattaFeatures">
+        <test-method signature="openLoksatta()[pri:0, instance:testNGTest.loksattaFeatures@f0e995e]" started-at="2022-01-05T20:03:33 IST" name="openLoksatta" finished-at="2022-01-05T20:03:49 IST" duration-ms="16258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoksatta -->
+      </class> <!-- testNGTest.loksattaFeatures -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
