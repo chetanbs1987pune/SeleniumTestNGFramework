@@ -24,7 +24,7 @@ public class readExcel {
 		String finalStr = "";
 		try {
 			File excelFile = new File(
-					"C://Users//Rahul Zagade//eclipse-workspace//SeleniumAutoFramework//src//Elements.xlsx");
+					"C://Users//Rahul Zagade//eclipse-workspace1//seleniumFrameworkTestNG//src//Elements.xlsx");
 			reader = new FileInputStream(excelFile);
 			wb = new XSSFWorkbook(reader);
 			sheet = wb.getSheet("webElements");
@@ -50,7 +50,7 @@ public class readExcel {
 							// System.out.println("correspong value is " + elementStr);
 							Row row1 = sheet.getRow(0);
 							String elementType = row1.getCell(j).getStringCellValue();
-							finalStr = elementStr.concat("_");
+							finalStr = elementStr.concat("__");
 							finalStr = finalStr.concat(elementType);
 							return finalStr;
 						}
@@ -76,7 +76,7 @@ public class readExcel {
 		} else {
 			System.out.println("The Element is " + value);
 		}
-		String[] elements = value.split("_");
+		String[] elements = value.split("__");
 		
 		
 		if (elements[1].equalsIgnoreCase("Name")) {
@@ -87,7 +87,7 @@ public class readExcel {
 			element.click();
 		} else if (elements[1].equalsIgnoreCase("Xpath")) {
 			element = driver.findElement(By.xpath(elements[0]));
-			element.click();
+			//element.click();
 		} else if (elements[1].equalsIgnoreCase("Cssselector")) {
 			element = driver.findElement(By.cssSelector(elements[0]));
 			element.click();

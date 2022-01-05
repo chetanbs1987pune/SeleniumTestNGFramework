@@ -1,3 +1,1 @@
-04:19:2022 21:19:34.743 [main] ERROR testNGTest.googleFeatures - Successfully opened the website
-04:19:2022 21:19:37.386 [main] DEBUG testNGTest.googleFeatures - Successfully clicked on search button
-04:19:2022 21:19:41.483 [main] INFO  testNGTest.googleFeatures - Successfully closed the driver object
+05:25:2022 14:25:37.550 [main] ERROR testNGTest.loksattaFeatures - web stories options is displayed successfully
