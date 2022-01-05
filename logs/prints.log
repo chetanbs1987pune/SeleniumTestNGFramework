@@ -1,0 +1,3 @@
+05:36:2022 16:36:39.235 [main] ERROR testNGTest.loksattaFeatures - This is the class to test the loksatta.com website
+05:36:2022 16:36:48.788 [main] ERROR testNGTest.loksattaFeatures - Site is loaded successfully
+05:36:2022 16:36:49.544 [main] ERROR testNGTest.loksattaFeatures - web stories options is displayed successfully
