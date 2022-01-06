@@ -11,7 +11,7 @@
 	<RollingFile name="File" fileName="${basePath}/prints.log"
                        filePattern="${basePath}/prints-%d{yyy-MM-dd}.log">
             <PatternLayout pattern="%d{dd:mm:yyyy HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
-            <SizeBasedTriggeringPolicy size="1" />
+            <SizeBasedTriggeringPolicy size="1000" />
           </RollingFile>
           
           
@@ -22,12 +22,16 @@
 		</Console>
 	</Appenders>
 	<Loggers>
-		<Logger name="testNGTest.googleFeatures" level="trace" additivity="false">
+		<Logger name="testNGTest.googleFeatures" level="error" additivity="false">
 			<AppenderRef ref="File" />
 		</Logger>
 
+<Logger name="testNGTest.loksattaFeatures" level="error" additivity="false">
+			<AppenderRef ref="File" />
+		</Logger>
+		
 		<Root level="trace">
-			<AppenderRef ref="Console" />
+			<AppenderRef ref="File" />
 		</Root>
 	</Loggers>
 </Configuration>

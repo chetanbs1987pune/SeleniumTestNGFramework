@@ -20,7 +20,8 @@ public class googleFeatures extends propertiesObj {
 @Test
 	public void navigateGoogle() throws IOException {
 		try { 
-		pro=getPropertyObj();
+	     
+		 pro=getPropertyObj();
 		 driver =	initialiseDriver.initiatiase();
 		 driver.get(pro.getProperty("google_url"));
 		 log.error("Successfully opened the website");
@@ -29,6 +30,7 @@ public class googleFeatures extends propertiesObj {
 		 log.debug("Successfully clicked on search button");
 		 driver.close();
 		 log.info("Successfully closed the driver object");
+		 
 		}catch(Exception e) {
 			e.printStackTrace();
 			driver.close();
