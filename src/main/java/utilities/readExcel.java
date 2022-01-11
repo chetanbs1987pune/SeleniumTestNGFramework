@@ -8,10 +8,10 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class readExcel {
 
@@ -24,7 +24,7 @@ public class readExcel {
 		String finalStr = "";
 		try {
 			File excelFile = new File(
-					"C://Users//Rahul Zagade//eclipse-workspace1//seleniumFrameworkTestNG//src//Elements.xlsx");
+					"src//Elements.xlsx");
 			reader = new FileInputStream(excelFile);
 			wb = new XSSFWorkbook(reader);
 			sheet = wb.getSheet("webElements");
